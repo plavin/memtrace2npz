@@ -12,9 +12,9 @@ def file_to_np(filename):
     stacked = np.column_stack((isWrite, VA, size, IP))
     return np.asarray(np.uint64(stacked))
 
-def file_to_npz(filename):
-    arr = file_to_np(filename)
-    np.savez_compressed('temp.npz', arr)
+def file_to_npz(infile, outfile):
+    arr = file_to_np(infile)
+    np.savez_compressed(outfile, arr)
 
 #def file_to_csv(filename):
 #    arr = file_to_np(filename)

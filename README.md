@@ -1,19 +1,15 @@
-# memtrace-to-csv
+# memtrace2npz
 
-This project is a utility for converting the output of DynamoRIO's memtrace-x86 client to a csv file. The output can be compressed into a zip file as well. 
+This project is a utility for converting the output of DynamoRIO's memtrace-x86 client to an npz file. The output can be compressed into a zip file as well. 
+
+## Installation
+
+```pip3 install memtrace2npz
+```
 
 ## Usage
 
 ```
-import memtrace-to-csv
-memtrace-to-csv.convert(filename, outname)
+memtrace2npz -i <inputfile>
 ```
-
-## Installation
-
-```pip3 install memtrace-to-csv
-```
-
 ## Testing
-
-todo
