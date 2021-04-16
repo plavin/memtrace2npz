@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+import memtrace-to-npz
+
+print('Hello pat!')
